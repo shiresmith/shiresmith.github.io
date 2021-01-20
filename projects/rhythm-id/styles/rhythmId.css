@@ -1,0 +1,189 @@
+body {
+	font-family: Tahoma, Geneva, sans-serif;
+	font-size:62.5%;
+	color: #333333;
+}
+
+@media screen and (min-width: 400.01px) {
+    body {
+        background: #e2f2fc url('http://www.drnts.com/RhythmId/styles/images/blueBackground.png');
+		background-size: 100%;
+    }
+	.mobile{display: none;}
+	.nonMobile{display:block;}
+}
+
+header{
+	margin: 0 0 0 1rem;
+}
+header h1{
+	font-size: 2.2rem;
+	margin-bottom: 0;
+}
+header h2{
+	margin-top: 0;
+}
+.footer{
+   color: #1b668d; 
+   width: 100%;
+   text-align: center;
+   font-family: Georgia, "Times New Roman", Times, serif;
+   font-size: .6rem;   
+   position: fixed;
+   bottom: 0rem;
+   left: 0rem;
+   height: 1rem;  
+   margin: 0;
+   padding-top: .2rem;
+   clear: both;
+   text-decoration: none;
+   
+  		background-image: linear-gradient(bottom, rgb(165,215,247) 3%, rgb(198,255,255) 52%, rgb(238,255,255) 76%);
+		background-image: -o-linear-gradient(bottom, rgb(165,215,247) 3%, rgb(198,255,255) 52%, rgb(238,255,255) 76%);
+		background-image: -moz-linear-gradient(bottom, rgb(165,215,247) 3%, rgb(198,255,255) 52%, rgb(238,255,255) 76%);
+		background-image: -webkit-linear-gradient(bottom, rgb(165,215,247) 3%, rgb(198,255,255) 52%, rgb(238,255,255) 76%);
+		background-image: -ms-linear-gradient(bottom, rgb(165,215,247) 3%, rgb(198,255,255) 52%, rgb(238,255,255) 76%);
+		
+		background-image: -webkit-gradient(
+			linear,
+			left bottom,
+			left top,
+			color-stop(0.03, rgb(165,215,247)),
+			color-stop(0.52, rgb(198,255,255)),
+			color-stop(0.76, rgb(238,255,255))
+		);
+}
+
+
+.appstore{
+	float: right;
+	margin-right: 2rem;
+}
+.appstore img{
+	width: 8rem;
+	height: 2.2rem;
+}
+
+
+.appDesc{
+	padding-top: 1rem;
+	font-size: 1rem;
+}
+#selectedScreen, #selectedScreen_m{
+	padding-top: 4rem;
+	font-family: "Comic Sans MS";
+	font-size: 1.5rem;
+	color: #1b668d;
+}
+#screenDescription, #screenDescription_m{
+	padding-top: 1rem;
+	font-size: 1rem;
+	color: #1b668d;
+}
+
+
+br {
+	clear: left;
+}
+
+ul.screenList, ul.screenList_m{
+	list-style-type: none;
+	margin: .5rem 0 0 0;
+	padding: 0;
+}
+ul.screenList li, ul.screenList_m li{
+	display: block;
+	background-color: #aedaf2;
+	width: 2.2rem;
+	min-height: 1.5rem;
+	float: left;
+	text-align: center;
+	vertical-align: middle;
+	padding: .2rem .5rem .2rem .5rem;
+	border: thin solid #1b668d;
+	border-radius: .3rem;
+	text-align: center;
+	color: #1b668d;
+	font-size: small;   
+	font-weight: 500;
+}
+
+.selected{
+	background-color: #daecf8 !important;
+	font-weight: bolder;
+}
+#bigscreenDescription, #bigscreenDescription_m{
+	font-size: .8rem;
+	margin: 1rem;
+}
+.phoneWrapper, .phoneWrapper_m{
+	width: 100%;
+	position:relative; 
+	left:0; 
+	top:0;
+}
+.phoneImg{
+	width: 11.71rem;
+	position: relative;
+	top: 0;
+	left: 0;
+}
+#screenShot, #screenShot_m{
+	width: 10rem;
+	position: absolute;
+	top: 2.88rem;
+	left: .848rem;
+}
+
+	
+.mobile{display: none;}
+.nonMobile{display:block;}
+	
+@media screen and (max-width: 400px) {
+    body {
+		background-image: linear-gradient(bottom, rgb(165,215,247) 3%, rgb(198,255,255) 52%, rgb(238,255,255) 76%);
+		background-image: -o-linear-gradient(bottom, rgb(165,215,247) 3%, rgb(198,255,255) 52%, rgb(238,255,255) 76%);
+		background-image: -moz-linear-gradient(bottom, rgb(165,215,247) 3%, rgb(198,255,255) 52%, rgb(238,255,255) 76%);
+		background-image: -webkit-linear-gradient(bottom, rgb(165,215,247) 3%, rgb(198,255,255) 52%, rgb(238,255,255) 76%);
+		background-image: -ms-linear-gradient(bottom, rgb(165,215,247) 3%, rgb(198,255,255) 52%, rgb(238,255,255) 76%);
+		
+		background-image: -webkit-gradient(
+			linear,
+			left bottom,
+			left top,
+			color-stop(0.03, rgb(165,215,247)),
+			color-stop(0.52, rgb(198,255,255)),
+			color-stop(0.76, rgb(238,255,255))
+		);
+    }
+	
+	.appstore{margin-right: .2rem;}
+	.appstore img{width: 7rem;height: 2.1rem;}
+	header h1{ font-size: 1.8rem; }
+	.mobile{display: block;}
+	.nonMobile{display:none;}
+}
+.Drum img{
+	width: 10rem;
+	display: inline;
+}
+
+/*@media screen and (min-width: 400.01px) and (max-width: 700px) {*/
+@media screen and (max-width: 700px) {
+	.Drum{
+        width: 5rem;
+    }
+	
+	.Drum img{
+		display: none;
+	}
+	/*
+    .Drum {
+        width: 0;
+    }
+	.Drum img{
+		display: none;
+	}
+	*/
+}
+

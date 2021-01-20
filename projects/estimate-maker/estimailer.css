@@ -1,0 +1,188 @@
+@charset "utf-8";
+
+@viewport{
+	width: device-width; /* replaces header tag eventually */
+}
+
+html { 
+	height: 100%;
+	font-size: 10px;
+	font-size: 62.5%; /* default=16px, use with rem 10px 1.4rem=14px 1.6rem=16px */
+}
+
+body {
+    height: 100%;
+    margin: 0;
+    font-family: Lucida Sans Unicode, Lucida Grande, sans-serif; /*Arial,Helvetica,sans-serif;*/
+	/*font-family: “Helvetica Neue”, Helvetica, Arial, sans-serif;
+	font-family: “Century Gothic”, CenturyGothic, AppleGothic, sans-serif;/*
+	-ms-text-size-adjust: none;
+	-moz-text-size-adjust: none;
+    -webkit-text-size-adjust: none; /* prevent resizing text on orientation change */
+    background-color: #fafafa;
+    -webkit-touch-callout: none; 
+	color: black;
+}
+
+.view {
+	width: 100%;
+	height: 100%;
+    min-height: 100%;
+    overflow: auto;
+    position: relative;
+	-ms-user-select: none;
+	-moz-user-select: none;
+	-webkit-user-select: none;	  /* disables copy-paste */
+	background-color: rgb(27, 21, 7);
+	background-color: #fafafa;
+	background-size: cover;
+    -webkit-overflow-scrolling: touch;
+}
+ul {
+	padding: 0;
+}
+
+
+header, aside, footer, article {display:block;}
+
+
+.logo{
+    position: relative;
+	min-height: 3.0rem;
+    float: left;
+    width: 50%;
+	margin: 0;
+}
+
+.logo ul li{
+	color: black;
+	padding: 0 5%;
+}
+
+
+	
+h1{-webkit-margin-after:0; font-size:3rem;}
+h2{ -webkit-margin-before: 0; }
+h3{ font-size: 2rem;}
+
+nav{
+	background-color:#6b727c;
+}
+
+ul {
+	padding: 0;
+	list-style: none;
+}
+
+header, aside, footer, article {display:block;}
+
+
+nav ul ul {
+	display: none;
+}
+
+nav ul li:hover > ul {
+	display: block;
+}
+	
+nav ul {
+	float: right;
+	padding: 0;
+	list-style: none;
+	position: relative;
+	display: inline-table;
+	width:50%;
+	height: 3rem;
+	min-height: 3.0rem;
+	margin: 2% 0;
+}
+
+nav ul:after {
+	content: ""; clear: both; display: block;
+}
+	
+nav ul li {
+	float: left;
+	width: 33%;
+	text-align: center;
+	padding: 1rem 0;
+	margin: auto;
+	color: #00d1f2; /* logo blue  */
+	text-decoration: none;
+	font-size: 1.5rem; 
+}
+nav ul li:hover {
+	background: #02a8c2;
+	background: linear-gradient(top, #4f5964 0%, #5f6975 40%);
+	background: -moz-linear-gradient(top, #4f5964 0%, #5f6975 40%);
+	background: -webkit-linear-gradient(top, #4f5964 0%,#5f6975 40%);
+}
+nav ul li:hover a {
+	/*color: #fff;*/
+	font-style: bold;
+}
+	
+nav ul li a {
+	display: block; 
+	color: #00d1f2; /* logo blue  */
+	text-decoration: none;
+	font-size: 1.5rem; 
+	margin:auto;
+}	
+
+.remember{
+	width:100%; 
+	text-align:center; 
+	color: #01f6bb; /* logo green */
+	font-size:2.0rem; 
+	clear:both;
+}
+
+.MainImage{
+	margin: .5rem auto;
+	width: 100%;
+	height: auto;	
+}
+
+.synopsis{
+	margin: 2% 3%;
+	font-size: 1.8rem;
+	font-style:normal;
+	color: #222;
+
+}
+
+#AppStoreButton{
+	background-color: white;
+}
+/*
+@media only screen and (max-width: 680px), only screen and (max-device-width: 680px) {
+	.logo{width: 35%;}
+	nav ul{width: 65%;}
+}
+*/
+
+/* email subscribing form */
+#subscribe{font-family: 'Montserrat', sans-serif; background-color:#00d1f2; color: #333; padding: 3.5rem 0;  box-sizing:border-box; display:block; }
+.container{max-width:75rem; margin: 1.5rem auto; padding: 0 1.5rem; box-sizing:border-box; }
+.tablerow {display:table; margin:0; padding:0; box-sizing:border-box; width:100%;vertical-align: baseline; border:0;}
+.emailbox{ margin:0 auto; text-align:center;float: none !important; width:75%; position:relative; min-height:.1rem; padding:0 1.5rem; }
+.container:before, .container:after {content: " ";display: table;}
+#subscribe h2 {color: #333333; font-size: 2.8rem; font-weight: 400; line-height: 2.8rem; margin: 0;}
+#subscribe p {font-size: 1.4rem; font-weight: 400; color: #333333; }
+#emailCapture{margin: 1rem auto; padding: 0; border: 0; font: inherit; font-size: 100%; vertical-align: baseline;}
+textarea, input {-webkit-border-radius: 0;-moz-border-radius: 0;border-radius: 0;-webkit-appearance: none;-webkit-font-smoothing: antialiased;font-weight: 400;}
+.halfBox{ width: 44%; float:left; position:relative; padding:0 1.5rem;  box-sizing:border-box;  margin: 1rem 3%; }
+#subscribe input {background: white; width: 100%; border: none; padding: 1rem 2rem; color: #333333; font-size: 1.4rem; font-weight: normal; line-height: normal; height: 4rem; }
+.clearfix{clear:both;}
+#subscribeButton{background: #01f6bb; border:.1rem solid white; color: white;font-size: 1.4rem;font-weight: normal;line-height: normal;padding: 1rem 4rem; margin:2rem auto 1rem auto; cursor: pointer;}
+#subscribe small {font-size: 1rem; font-weight: normal; line-height: normal; color: #333;}
+
+
+@media only screen and (max-width: 680px), only screen and (max-device-width: 680px) 
+{ 
+	.logo{width: 100%; margin: 0;}
+	nav ul{width: 100%; margin:0; }
+	.synopsis{ font-size: 1.5rem; }
+	.halfBox{width: 100%;}
+}

@@ -1,0 +1,113 @@
+
+@viewport{
+	width: device-width; /* replaces header tag eventually */
+}
+
+html { 
+	height: 100%;
+	font-size: 10px;
+	font-size: 62.5%; /* default=16px, use with rem 10px 1.4rem=14px 1.6rem=16px */
+}
+
+body {
+    height: 100%;
+    margin: 0;
+    font-family: Arial,Helvetica,sans-serif;
+	-ms-text-size-adjust: none;
+	-moz-text-size-adjust: none;
+    -webkit-text-size-adjust: none; /* prevent resizing text on orientation change */
+    background-color: #e4dfca;		/* #D6d6d6; */ 
+	background-size: cover;
+    -webkit-touch-callout: none; 
+	color: black;
+	/*background: #e4dfca url('../images/paper_mini.jpg') top left no-repeat;*/
+}
+
+.view {
+	width: 960px;
+	height: 100%;
+	margin: 0 auto;
+    min-height: 100%;
+    overflow: auto;
+    position: relative;
+	-ms-user-select: none;
+	-moz-user-select: none;
+	-webkit-user-select: none;	  /* disables copy-paste */
+	background-color:#e4dfca;
+	background-size: cover;
+    -webkit-overflow-scrolling: touch;
+    /*-moz-box-shadow:    inset 0 0 10px #000000;
+    -webkit-box-shadow: inset 0 0 10px #000000;
+    box-shadow:         inset 0 0 10px #000000;*/
+	background: #e4dfca url('../images/paper960_mini.jpg') top left no-repeat;
+}	
+
+header, aside, footer, article {display:block;}
+
+.banner{
+	width: 100%;
+	height: auto;	
+}
+
+ul.navList{
+	width: 100%;
+	list-style-type: none;
+	height: 5rem;
+	min-height: 5.0rem;
+	margin: 0;
+	padding: 0;
+	/*background-color:#e4dfca;
+	box-shadow: 5px 0px 10px #646464; 
+	-webkit-box-shadow: 5px 0px 10px #646464; */
+	overflow:hidden;
+	box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	border-bottom: inset #646464;
+}
+ul.navList li{
+	display: block;
+	width: 20%;
+	float: left;
+	text-align: center;
+}
+ul.navList li a{
+	font-family: Arial, Helvetica, sans-serif;
+	text-decoration: none;
+	color: #404040;
+	font-size: 2rem;   
+	font-weight: 800;
+	vertical-align: middle;
+	margin: auto;
+	line-height: 5.0rem;
+}
+ul.navList li a:hover{
+	color: white;
+	text-shadow: 1px 1px 10px black;
+}
+ul.navList li a:active{
+	color: white;
+	text-shadow: 1px 1px 10px black;
+}
+ul.navList li a.current{
+	color: white;
+	text-shadow: 1px 1px 10px black;
+}
+
+ul.navlist li ul{
+	display: none;
+}
+nav ul ul {
+	display: none;
+}
+ul.navlist li a img{
+	width: 40px;
+	height: 40px;
+}
+
+.BookCover{
+	margin: 2rem;
+}
+
+@media only screen and (max-width: 960px), only screen and (max-device-width: 960px) {
+	.view{width:100%}
+}

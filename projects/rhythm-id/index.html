@@ -1,0 +1,164 @@
+<!--- RHYTHM ID index --->
+<!DOCTYPE html>
+    <head>
+    	<title>Rhythm ID for Middle-Eastern Bellydance Rhythms</title>
+        <link href="styles/rhythmId.css" rel="stylesheet" media="screen">
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta name="Author" content="Nancy T. Smith, Ph.D." />
+		<meta name="professional website" content="Rhythm ID  for Middle-Eastern Bellydance Rhythms iPhone App">
+		<meta name="Description" content="Rhythm ID iPhone App by Nancy T. Smith, Ph.D., which teaches you to learn middle eastern bellydance rhythms played on the dumbek and tabla hand drums" />
+        <meta name="keywords" content="iwarriorprincess, rhythm, mideastern, dumbek, tabla, beledi, maqsoum, ciftetelli, bellydance, middle eastern" />
+    	<script src="http://code.jquery.com/jquery-1.8.3.min.js"></script>
+		<link rel="shortcut icon" type="image/icon" href="favicon.png.html" />
+  		<meta name="viewport" content="width=device-width,initial-scale=1">
+		<title>Rhythm Identification for Middle Eastern Bellydance Rhythms iPhone App</title>
+  	</head>
+	<body>
+		<div class="view">
+
+	    <header>
+			 <a href="https://itunes.apple.com/us/app/rhythm-id-for-middle-eastern/id586089910?ls=1&amp;mt=8">
+				 <div class="appstore"><img src="images/AvailableApp_413_122.png" /></div>
+			 </a>
+	         <h1>Rhythm ID</h1>
+			 <h2>for Middle-Eastern Bellydance Rhythms</h2>
+		</header>
+
+		<section class="nonMobile">
+		<table width="100%">
+			<tr><td width="1.6rem"></td><td width="50%"></td><td width="1.8rem"></td></tr>
+			<tr><td rowspan="4">
+					<div class="phoneWrapper">
+						<img class="phoneImg" src="images/iphone.png" />
+						<img  id="screenShot" />
+					</div>
+				</td>
+
+				<td class="appDesc">Rhythm ID teaches you to identify and remember mideastern rhythms</td>
+				<td rowspan="4" class="Drum"><img width="10rem" src="images/iTunesArtwork.png"></td>
+			</tr>
+			<tr> <td id="selectedScreen"></td></tr>
+			<tr> <td id="screenDescription"></td></tr>
+			<tr> <td>
+					<ul class="screenList">
+						<li id="main">Main</li>
+						<li id="quiz">Quiz</li>
+						<li id="listen">Listen</li>
+						<li id="addSample">Record</li>
+						<li id="addType">Add</li>
+					</ul>
+				</td>
+			</tr>
+		</table>
+		</section>
+
+		<section class="mobile">
+		<table width="100%">
+			<tr><td class="appDesc">Rhythm ID teaches you to identify and remember mideastern rhythms</td></tr>
+			<tr><td>
+				<div class="phoneWrapper">
+					<img class="phoneImg" src="images/iphone.png" />
+					<img  id="screenShot_m" />
+					<div id="selectedScreen_m" style="position:absolute;top:0;left:12rem;padding-top: 2rem;"></div>
+					<div id="screenDescription_m" style="position:absolute;top:5rem;left:12rem;"></div>
+				</div>
+			</td></tr>
+			<tr><td>
+				<div>
+					<ul class="screenList_m">
+						<li id="main_m">Main</li>
+						<li id="quiz_m">Quiz</li>
+						<li id="listen_m">Listen</li>
+						<li id="addSample_m">Record</li>
+						<li id="addType_m">Add</li>
+					</ul>
+				</div>
+			</td></tr>
+		</table>
+		</section>
+
+	 	<br>
+		<section id="bigscreenDescription">
+			<p>Rhythm is the heart and soul of bellydance. The drumming and the dance are inseparable. Middle Eastern rhythms are rich and complex. Rhythm ID makes it easy to learn and remember Middle Eastern rhythms using the time-proven tradition of test-taking to drill the knowledge home. </p>
+			<p>It can be difficult for new dancers to detect the rhythm in a piece of bellydance music. And yet knowing the rhythms is a crucial part of becoming a good dancer. This app will help you train your ear to identify the rhythms with greater depth.</p>
+			<p>For drummers, the ability to remember rhythms is even more important. This app can help drummers learn the nuances among the different rhythms. The key to becoming better at anything is practice, practice, practice. Rhythm ID will allow you to practice when having your drum with you is not practical. The ability to add new rhythms means this app will take you as far as you want to go.</p>
+		</section>
+	    <br>
+
+		
+	 	<!-- <a href="http://www.nancytsmith.com">
+	 	<footer><div class="footer">
+	 		Nancy T. Smith
+	 	</div></footer>
+		</a> -->
+
+	 </div>
+
+
+	<script>
+		var screen = {
+			main: 0,
+		    quiz: 1,
+			listen: 2,
+			addSample: 3,
+			addType: 4
+		}
+		var description = [ "From the first screen, you can choose to play the quiz, listen to a specific rhythm, or add a rhythm sample or rhythm type.",
+							"Listen to a randomly chosen rhythm and guess which one it is with the rhythm wheel.  See how high your score or your winning streak can go.",
+							"Select the rhythm you wish to hear, and the rhythm is played along with the musical notation.",
+							"Add a sample by recording with a simple press of the button.",
+							"Missing a rhythm you'd like to learn?  Add your own rhythm type and it is automatically added to the quiz."
+		];
+		var titles = ["Main", "Quiz", "Listen", "Add Sample", "Add Type"];
+		var images = ["mainScreen", "quizScreen", "listenScreen", "addSampleScreen", "addTypeScreen"];
+
+		$(document).ready(function(){
+			var mainButton = $("#main");
+			moveMe( 0, mainButton);
+
+		     $("#main").click(function(){ moveMe(0, this)});
+		     $("#quiz").click(function(){ moveMe(1, this)});
+		     $("#listen").click(function(){moveMe(2, this)});
+		     $("#addSample").click(function(){ moveMe(3, this)});
+		     $("#addType").click(function(){ moveMe(4, this)});
+
+		     function moveMe(i, obj ){
+				selected = i;
+				$(".screenList li").removeClass("selected");
+				$(obj).addClass("selected");
+				$("#screenDescription").text(description[i]);
+				$("#selectedScreen").text(titles[i]);
+				$("#screenShot").hide();
+				$("#screenShot").attr('src', './images/' + images[i] + '.png');
+				$("#screenShot").show();
+			}
+
+			var mainButton_m = $("#main_m");
+			moveMe_m( 0, mainButton_m);
+
+		     $("#main_m").click(function(){ moveMe_m(0, this)});
+		     $("#quiz_m").click(function(){ moveMe_m(1, this)});
+		     $("#listen_m").click(function(){moveMe_m(2, this)});
+		     $("#addSample_m").click(function(){ moveMe_m(3, this)});
+		     $("#addType_m").click(function(){ moveMe_m(4, this)});
+
+		     function moveMe_m(i, obj ){
+				selected = i;
+				$(".screenList_m li").removeClass("selected");
+				$(obj).addClass("selected");
+				$("#screenDescription_m").text(description[i]);
+				$("#selectedScreen_m").text(titles[i]);
+				$("#screenShot_m").hide();
+				$("#screenShot_m").attr('src', './images/' + images[i] + '.png');
+				$("#screenShot_m").show();
+			}
+
+		 });
+
+	 </script>
+
+	 </body>
+
+
+
+</html>

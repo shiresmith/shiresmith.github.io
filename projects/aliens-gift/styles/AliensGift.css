@@ -1,0 +1,189 @@
+/* css reset */
+html, body, h1, h2, h3, h4, h5, h6, p, ol, ul, li, pre, code, address, variable, form, fieldset, blockquote{
+  padding: 0;
+  margin: 0;
+  font-size: 100%;
+  font-weight: normal;
+}
+ol{
+  margin-left: 1.4rem;
+  list-style: decimal;
+}
+ul{
+  margin-left: 1.4rem;
+  list-style: square:}
+  
+li:before {color: FFFFFF;}
+
+img{  border: 0;}
+
+body { 
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 16px;
+  text-align: left;
+  line-height: 1.88889;
+  color: #FFFFFF; 
+  background: #fff url('http://www.drnts.com/AliensGift/images/deepspace2.jpg'); 
+}
+
+
+#vendors{
+  text-align: left;
+padding: 1rem 1rem 3rem 1rem;
+}
+
+
+h3 { 
+  font: italic normal 1.4rem georgia, sans-serif;
+  letter-spacing: 1px; 
+  margin-bottom: 0; 
+  color: #7D775C;
+}
+
+a:link { color: #FFFFFF;}
+a:visited { color: #D4CDDC;}
+a:hover, a:active { color: #9685BA;}
+
+
+P.blocktext{
+  margin-left: auto;
+  margin-right: auto;
+  width: 6rem;
+}
+
+P.vendors{
+  margin-left: 0;
+  text-align: left;
+  font: 75% georgia, sans-serif;
+  line-height: 1.88889;
+  left: 10px;
+  padding-top: 20px; 
+}
+
+IMG.bookcover{
+  display: block;
+  width: 75px;
+  margin-left: 10px;
+  margin-top: 100px;
+}
+
+p{
+  margin-top: 1rem;
+  color: #FFFFFF;
+}
+
+.content{
+  overflow: hidden;
+  margin-right:204px;
+}
+
+
+/* width: 75px; */
+#bookcover{
+  border: 1px solid #FFF;
+  margin-left: 10px;
+  margin-bottom: 10px;
+
+}
+
+
+#sidebar{
+  float: left;
+  width: 200px;
+  height: 450px;
+  padding: 1rem 3rem 1rem 1rem;
+
+}
+
+
+h1{
+  font-family: Arial, Helvetica, sans-serif;
+  color: #FFFFFF;
+  font-size: 60px; 
+  letter-spacing: 6px;
+  font-weight: bold;
+  text-align: center;
+}
+
+h2{
+  font-family: Arial, Helvetica, sans-serif;
+  color: #FFFFFF;
+ 
+  font-size: 36px; 
+  font-weight: bold;
+  text-align: center;
+}
+
+h3{
+  font-family: Arial, Helvetica, sans-serif;
+  color: #FFFFFF;
+ 
+  font-size: 30px; 
+  font-weight: bold;
+  text-align: center;
+}
+
+
+/*  text-align: center;*/
+/* width="480" height="385" */
+.youtube{
+  width: 480px;
+  height: 385px;
+  margin: 0 auto;
+}
+
+
+.Summary{
+ padding: 1rem;
+ line-height: 1.25;
+ color: #FFFFFF;
+ background: url(http://www.drnts.com/AliensGift/images/spaceNoStars.jpg) repeat;
+ 
+}
+
+.Facebook{
+  float: left;
+  /*width: 200px;
+  height: 800px;*/
+  padding: 3rem 3rem 1rem 1rem;
+
+}
+
+footer { 
+	height:4rem;border-top:dashed .1rem #ccc; font-size:1.1rem; text-align:center; 
+	line-height:4rem;
+	background:black;
+}
+
+footer a{
+	text-decoration: none;
+}
+.youtube_small{
+	display: none;
+}
+.amazonLink{
+	margin: 10px;
+	display:none;
+}
+@media only screen and (max-width: 1272px), only screen and (max-device-width: 1272px) {
+	.content{ margin-right: 100px;}
+}
+@media only screen and (max-width: 1000px), only screen and (max-device-width: 1000px) {
+	.content{ margin-right: 10px;}
+}
+@media only screen and (max-width: 773px), only screen and (max-device-width: 773px) {
+	#sidebar{display: none;}
+	h1{  font-size: 40px; }
+	h2 { font-size: 22px; }
+	h3{ font-size: 25px; }
+	.content{ margin-right: 0px;}
+	.amazonLink{display:block;}
+}
+
+@media only screen and (max-width: 405px), only screen and (max-device-width: 405px) {
+	h1{  font-size:25px;j letter-spacing:2px }
+	h2 { font-size: 18px; }
+	h3{ font-size: 20px; }
+
+}
+
