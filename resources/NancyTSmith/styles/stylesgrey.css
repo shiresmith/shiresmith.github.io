@@ -148,7 +148,7 @@ footer {  height:40px;border-top:dashed 1px #ccc; font-size:11px; text-align:cen
 .bottomBar li { display:inline-block; vertical-align:middle; float:left; margin: 10px;}
 .bottomBar li a { display:block; line-height:auto; color:white;text-decoration:none; text-transform:uppercase;  padding:.3rem 1rem;}
 .bottomBar li a:hover, bottomBar li.active a { background:#efefef; color:white; text-shadow:.1rem .1rem 0 #FFF;}
-.bottomBar ul.left {float:left;width:20%; }
+.bottomBar ul.left {float:left;width:10%; }
 .bottomBar ul.right{float:right; width:auto; }
 .spacer {height:1rem;};
 
