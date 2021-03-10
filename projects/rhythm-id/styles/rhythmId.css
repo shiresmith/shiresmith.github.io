@@ -6,7 +6,8 @@ body {
 
 @media screen and (min-width: 400.01px) {
     body {
-        background: #e2f2fc url('http://www.drnts.com/RhythmId/styles/images/blueBackground.png');
+        /* background: #e2f2fc url('http://www.drnts.com/RhythmId/styles/images/blueBackground.png'); */
+		background: #fafaff;
 		background-size: 100%;
     }
 	.mobile{display: none;}
